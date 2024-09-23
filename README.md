@@ -83,9 +83,4 @@ Bu proje, bir kütüphanenin kitap ve yazar işlemlerini yönetmek amacıyla gel
 4. Veritabanını oluşturun ve gerekli tabloları ekleyin.
 5. Uygulamayı başlatın ve tarayıcınızda görüntüleyin.
 
-## Katkıda Bulunanlar
-- [Adınız]
-
-## Lisans
-Bu proje [Lisans Bilgisi] altında lisanslanmıştır.
 
