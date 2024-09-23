@@ -5,7 +5,6 @@ Bu proje, bir kütüphanenin kitap ve yazar işlemlerini yönetmek amacıyla gel
 
 ## Teknolojiler
 - ASP.NET Core MVC
-- Entity Framework Core
 - Bootstrap (CSS Framework)
 - C#
 - HTML/CSS
