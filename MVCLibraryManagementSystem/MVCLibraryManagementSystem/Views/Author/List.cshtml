@@ -1,0 +1,37 @@
+﻿@using MVCLibraryManagementSystem.Models;
+@model List<AuthorListViewModel>
+
+<h1 class="text-center fw-bold bg-body-tertiary">YAZAR LİSTESİ</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">No</th>
+            <th scope="col">Yazar Adı</th>
+            <th scope="col">Doğum Tarihi</th>
+            
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var task in Model)
+        {
+            <tr>
+                <th scope="row">@task.Id</th>
+                <td>
+                    <a asp-controller="Author" asp-action="Detail" asp-route-id="@task.Id">
+                        @task.FullName
+                    </a>
+                </td>                
+                <td>@task.DateofBirth.ToString("dd.MM.yyyy")</td>               
+                <td><a asp-controller="Author" asp-action="Edit" asp-route-id="@task.Id" class="btn btn-primary">Düzenle</a></td>
+                <td><a asp-controller="Author" asp-action="Delete" asp-route-id="@task.Id" class="btn btn-danger">Sil</a></td>
+            </tr>
+        }
+
+
+    </tbody>
+    <td><a asp-controller="Author" asp-action="Create" class="btn btn-secondary">Yeni Ekle</a></td>
+
+</table>

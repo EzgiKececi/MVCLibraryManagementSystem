@@ -1,0 +1,46 @@
+﻿@model Book
+
+<h3>Yeni Kitap Ekleme</h3>
+
+<form method="post" asp-controller="Book" asp-action="Create">
+    <div>
+        <label>Kitap Adı</label>
+        <input asp-for="Title" class="form-control" type="text" />
+        <span asp-validation-for="Title" class="text-danger mt-2 fw-bold"></span>
+    </div>
+
+    <div>
+        <label>Kitap Yazarı</label>
+        <select asp-for="AuthorId" asp-items="@(    new SelectList(ViewBag.Authors, "Id", "FullName")     )" class="form-control">
+            <option selected disabled>Seçiniz</option>
+
+        </select>
+        <span asp-validation-for="AuthorId" class="text-danger mt-2 fw-bold"></span>
+    </div>
+
+    <div>
+        <label>Yayımlanma tarihi</label>
+        <input asp-for="PublishDate"  class="form-control"type="date"></input>
+        <span asp-validation-for="PublishDate" class="text-danger mt-2 fw-bold"></span>
+    </div>
+
+    <div>
+        <label>ISBN</label>
+        <input asp-for="Isbn" rows="4" class="form-control"></input>
+        <span asp-validation-for="Isbn" class="text-danger mt-2 fw-bold"></span>
+    </div>
+
+    <div>
+        <label>Stok Bilgisi</label>
+        <input asp-for="CopiesAvailable" rows="4" class="form-control"></input>
+        <span asp-validation-for="CopiesAvailable" class="text-danger mt-2 fw-bold"></span>
+    </div>
+
+    <div>
+        <label>Kitap Türü</label>
+        <input asp-for="Genre" rows="4" class="form-control"></input>
+        <span asp-validation-for="Genre" class="text-danger mt-2 fw-bold"></span>
+    </div>
+
+    <button type="submit" class="btn btn-success mt-2">Kaydet</button>
+</form>

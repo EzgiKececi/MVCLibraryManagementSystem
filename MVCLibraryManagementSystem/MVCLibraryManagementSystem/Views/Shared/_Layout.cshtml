@@ -1,0 +1,32 @@
+﻿<html>
+
+<head>
+
+    <link href="~/lib/bootstrap.css" rel="stylesheet" />
+    <title>Kütüphane Yönetim Sistemi</title>
+
+</head>
+<body class="bg-custom">
+    <div class="alert alert-info fw-bold">
+
+        Hoş Geldin - @User.Claims.FirstOrDefault(x => x.Type == "email")?.Value -
+
+    </div>
+    <partial name="_navbarPartial" />
+   
+
+    <div class="container">
+        
+        @RenderBody()
+
+       
+    </div>
+
+    <footer class="bg-light text-center text-muted py-3 fixed-bottom">
+        <div class="container">
+            <span>© 2024 Tüm Hakları Saklıdır</span>
+        </div>
+    </footer>
+
+</body>
+</html>

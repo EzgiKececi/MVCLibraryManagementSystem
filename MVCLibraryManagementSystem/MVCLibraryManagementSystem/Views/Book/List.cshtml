@@ -1,0 +1,41 @@
+﻿@using MVCLibraryManagementSystem.Models;
+@using MVCLibraryManagementSystem.ViewModels;
+@model List<BookListViewModel>
+
+<br />
+
+<h1 class="fw-bold bg-body-tertiary text-center">KİTAP LİSTESİ</h1>
+<br />
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">No</th>
+            <th scope="col">Kitap Adı</th>
+            <th scope="col">Kitap Türü</th>          
+            <th scope="col">Stok Durumu</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var task in Model)
+        {
+            <tr>
+                <th scope="row">@task.Id</th>
+                <td>
+                    <a asp-controller="Book" asp-action="Detail" asp-route-id="@task.Id">
+                        @task.Title
+                    </a>
+                </td>
+                <td>@task.Genre</td>               
+                <td>@task.CopiesAvailable</td>
+                <td><a asp-controller="Book" asp-action="Edit" asp-route-id="@task.Id"class="btn btn-primary">Düzenle</a></td>
+                <td><a asp-controller="Book" asp-action="Delete" asp-route-id="@task.Id" class="btn btn-danger">Sil</a></td>
+            </tr>
+        }
+
+
+    </tbody>
+    <td><a asp-controller="Book" asp-action="Create" class="btn btn-secondary">Yeni Ekle</a></td>
+
+</table>

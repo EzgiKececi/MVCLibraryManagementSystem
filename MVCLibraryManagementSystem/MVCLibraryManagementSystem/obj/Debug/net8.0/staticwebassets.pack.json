@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Yavuz\\source\\repos\\MVCLibraryManagementSystem\\MVCLibraryManagementSystem\\wwwroot\\lib\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap.css"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MVCLibraryManagementSystem.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.MVCLibraryManagementSystem.props",
+      "PackagePath": "build\\MVCLibraryManagementSystem.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.MVCLibraryManagementSystem.props",
+      "PackagePath": "buildMultiTargeting\\MVCLibraryManagementSystem.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.MVCLibraryManagementSystem.props",
+      "PackagePath": "buildTransitive\\MVCLibraryManagementSystem.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "+TRuIsoV3ZGU0lk69tUeZChKdQe3+UVfwFLpn3s3xFA=",
+  "Source": "MVCLibraryManagementSystem",
+  "BasePath": "_content/MVCLibraryManagementSystem",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "MVCLibraryManagementSystem\\wwwroot",
+      "Source": "MVCLibraryManagementSystem",
+      "ContentRoot": "C:\\Users\\Yavuz\\source\\repos\\MVCLibraryManagementSystem\\MVCLibraryManagementSystem\\wwwroot\\",
+      "BasePath": "_content/MVCLibraryManagementSystem",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Yavuz\\source\\repos\\MVCLibraryManagementSystem\\MVCLibraryManagementSystem\\wwwroot\\lib\\bootstrap.css",
+      "SourceId": "MVCLibraryManagementSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Yavuz\\source\\repos\\MVCLibraryManagementSystem\\MVCLibraryManagementSystem\\wwwroot\\",
+      "BasePath": "_content/MVCLibraryManagementSystem",
+      "RelativePath": "lib/bootstrap.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap.css"
+    }
+  ]
+}

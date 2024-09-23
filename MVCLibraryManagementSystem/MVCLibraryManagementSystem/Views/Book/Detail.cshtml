@@ -1,0 +1,18 @@
+﻿@using MVCLibraryManagementSystem.Models;
+@using MVCLibraryManagementSystem.ViewModels;
+@model Book
+
+<br />
+
+<h3>Kitap Detayı</h3>
+
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">@Model.Title</h4>        
+        <p class="card-text"><strong>Tür:</strong> @Model.Genre</p>
+        <p class="card-text"><strong>Stok Durumu:</strong> @Model.CopiesAvailable</p>
+        <p class="card-text"><strong>Yayınlanma Tarihi:</strong> @Model.PublishDate</p>
+        <p class="card-text"><strong>ISBN:</strong> @Model.Isbn</p>
+        
+    </div>
+</div>
