@@ -10,8 +10,7 @@ namespace MVCLibraryManagementSystem.Controllers
     using System.Security.Claims;
     using MVCLibraryManagementSystem.Models;
 
-    namespace ToDoAppPatika.Controllers
-    {
+   
       
         public class AuthController : Controller
         {
@@ -122,7 +121,7 @@ namespace MVCLibraryManagementSystem.Controllers
                 return RedirectToAction("Index", "Home");
             }
         }
-    }
+    
 
     
 }
